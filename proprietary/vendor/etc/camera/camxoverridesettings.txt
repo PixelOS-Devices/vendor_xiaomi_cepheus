@@ -30,3 +30,4 @@ isDynamicEFL35mmEnabled=TRUE
 enableMoonOffset=TRUE
 gyroSensorSamplingRate=416
 sessionDumpForFlush=TRUE
+enableTOFInterface=TRUE
