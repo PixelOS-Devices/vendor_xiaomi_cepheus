@@ -391,7 +391,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msmnile.so \
-    vendor/xiaomi/cepheus/proprietary/vendor/lib/hw/sound_trigger.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.msmnile.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
@@ -424,7 +423,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
-    vendor/xiaomi/cepheus/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_app_profiles.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
@@ -448,10 +446,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexthwplugin.so \
-    vendor/xiaomi/cepheus/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
-    vendor/xiaomi/cepheus/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
-    vendor/xiaomi/cepheus/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
-    vendor/xiaomi/cepheus/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
@@ -485,7 +479,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libqsap_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsap_sdk.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
-    vendor/xiaomi/cepheus/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
     vendor/xiaomi/cepheus/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
