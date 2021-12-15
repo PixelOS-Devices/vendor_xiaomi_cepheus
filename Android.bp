@@ -186,9 +186,106 @@ android_app_import {
 }
 
 dex_import {
+	name: "tcmclient",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/tcmclient.jar"],
+}
+
+dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.2-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.1-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "embmslibrary",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callcapability-V1.0-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -205,6 +302,15 @@ prebuilt_etc_xml {
 	name: "manifest_vendor.xiaomi.hardware.mlipay",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.gnss@4.0-service",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
