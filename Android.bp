@@ -95,9 +95,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ImsRcsService",
+	name: "PowerOffAlarm",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
+	apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -106,9 +106,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PowerOffAlarm",
+	name: "ImsRcsService",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
+	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
