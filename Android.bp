@@ -155,7 +155,7 @@ android_app_import {
 dex_import {
 	name: "tcmclient",
 	owner: "xiaomi",
-	jars: ["proprietary/system/framework/tcmclient.jar"],
+	jars: ["proprietary/framework/tcmclient.jar"],
 }
 
 dex_import {
@@ -232,13 +232,6 @@ dex_import {
 	name: "qcrilhook",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qti-telephony-common",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
 	system_ext_specific: true,
 }
 
