@@ -97,6 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
     vendor/xiaomi/cepheus/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/xiaomi/cepheus/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
+    vendor/xiaomi/cepheus/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/xiaomi/cepheus/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/xiaomi/cepheus/proprietary/vendor/bin/nv_mac:$(TARGET_COPY_OUT_VENDOR)/bin/nv_mac \
     vendor/xiaomi/cepheus/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
@@ -186,6 +187,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    vendor/xiaomi/cepheus/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml \
@@ -213,6 +215,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/xiaomi/cepheus/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
@@ -230,6 +233,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/listen_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/listen_platform_info.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    vendor/xiaomi/cepheus/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/mixer_paths_overlay_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_dynamic.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
     vendor/xiaomi/cepheus/proprietary/vendor/etc/mixer_paths_pahu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_pahu.xml \
@@ -922,6 +926,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt
 
 PRODUCT_PACKAGES += \
+    libdapparamstorage \
+    vendor.dolby.hardware.dms@2.0 \
+    libdeccfg \
+    libstagefright_soft_ac4dec \
+    libstagefright_soft_ddpdec \
+    libhwdap \
+    libswgamedap \
+    libswvqe \
+    libdlbdsservice \
+    vendor.dolby.hardware.dms@2.0-impl \
     SoterService \
     CACertService \
     CneApp \
@@ -958,5 +972,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     manifest_android.hardware.drm@1.3-service.widevine \
+    manifest_vendor.dolby.hardware.dms \
     manifest_vendor.xiaomi.hardware.mlipay \
-    vendor.qti.gnss@4.0-service
+    vendor.qti.gnss@4.0-service \
+    vendor.dolby.hardware.dms@2.0-service
